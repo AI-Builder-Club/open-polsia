@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.env
+.DS_Store
+# spike scratch — apps the engineering agent scaffolds at runtime
+workspaces/

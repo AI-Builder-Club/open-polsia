@@ -1,0 +1,38 @@
+{
+  "name": "open-polsia",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "spike": "node --env-file-if-exists=.env --import tsx scripts/spike.ts",
+    "typecheck": "tsc --noEmit",
+    "test:guard": "node --env-file-if-exists=.env --import tsx scripts/test-guard.ts",
+    "ceo": "node --env-file-if-exists=.env --import tsx scripts/ceo.ts",
+    "autopilot": "node --env-file-if-exists=.env --import tsx scripts/autopilot.ts",
+    "seed": "node --env-file-if-exists=.env --import tsx scripts/seed.ts",
+    "dashboard": "node --env-file-if-exists=.env --import tsx src/services/dashboard.ts"
+  },
+  "dependencies": {
+    "@daytonaio/sdk": "^0.192.0",
+    "@earendil-works/pi-coding-agent": "^0.80.2",
+    "@sinclair/typebox": "^0.34.49",
+    "geist": "^1.7.2",
+    "postgres": "^3.4.9"
+  },
+  "devDependencies": {
+    "@types/node": "^26.0.1",
+    "tsx": "^4.22.4",
+    "typescript": "^6.0.3"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@google/genai",
+      "esbuild",
+      "sharp"
+    ],
+    "ignoredBuiltDependencies": [
+      "protobufjs"
+    ]
+  },
+  "packageManager": "pnpm@10.14.0"
+}

@@ -1,0 +1,6 @@
+:root { --bg: #f4efe6; --fg: #1a1a1a; --accent: #e05d3a; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: var(--bg); color: var(--fg); font-family: system-ui, sans-serif; }
+.hero { max-width: 720px; margin: 12vh auto; padding: 0 1.5rem; }
+.hero h1 { font-size: 2.5rem; color: var(--accent); margin-bottom: 0.5rem; }
+.hero p { font-size: 1.1rem; line-height: 1.6; }
