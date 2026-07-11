@@ -9,6 +9,8 @@ TypeScript end to end, Postgres for state.
 Meet **Polsia**, your AI cofounder: it maintains a task backlog, writes you a daily update, and puts
 working software in front of customers — while you watch it happen in a live retro/ASCII dashboard.
 
+![Polsia dashboard — live task queue, documents, and chat cofounder](docs/assets/dashboard.png)
+
 ```
   founder idea
        │
